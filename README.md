@@ -20,15 +20,11 @@ To get started, follow these steps:
    source venv/bin/activate
    ```
 
-3. **Install dependencies**
+3. **Install dependencies** (You may want to define your recipients_list.txt file and your GMail credentials in a .env file at that point)
 
    ```bash
-   pip install -r requirements.txt
-   python -m nltk.downloader wordnet
-   python -m nltk.downloader corpora
+   . setup.sh
    ```
-
-3. **Define your recipients list and your GMail credentials**
 
 4. **Run the script** (I personnaly use Cron jobs to ensure the daily scheduling)
 
