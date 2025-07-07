@@ -197,11 +197,11 @@ def process():
     content = get_content(links)
 
     date = get_short_today_date()
-    print('Running project on', date + '...')
+    logger.info(f'Running project on {date}...')
 
     send_all_emails(subject, content)
 
-    print('------------------------------------------------------------------------')
+    logger.info('------------------------------------------------------------------------')
 
 if __name__ == "__main__" :
     load_dotenv()
